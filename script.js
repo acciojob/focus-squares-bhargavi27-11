@@ -2,7 +2,7 @@
 const squares = document.querySelectorAll(".squares");
 
 squares.forEach(square) => {
-	square.addEventListnener("mouseover", () => {
+	square.addEventListnener("mouseenter", () => {
 		squares.forEach((s) => {
 			if (s != square){
 				s.style.backgroundColor = "#6F4E37";
@@ -14,4 +14,4 @@ squares.forEach(square) => {
 				s.style.backgroundColor = "#E6E6FA";
 			});
 		});
-	}
+	});
